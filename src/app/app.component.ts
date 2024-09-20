@@ -17,46 +17,8 @@ import { PlayersService } from './players.service';
 export class AppComponent {
   title = 'tic-tac-toe-2';
 
-  // player1: Player = {
-  //   id: 'One',
-  //   token: '🐝',
-  //   isTurn: true,
-  //   startGame: true,
-  //   moves: [],
-  //   wins: 0
-  // };
-
-  // player2: Player = {
-  //   id: 'Two',
-  //   token: '🐻',
-  //   isTurn: false,
-  //   startGame: false,
-  //   moves: [],
-  //   wins: 0
-  //   }
-
-  // players: Player[] = [
-  //   {
-  //     id: 'One',
-  //     token: '🐝',
-  //     isTurn: true,
-  //     startGame: true,
-  //     moves: [],
-  //     wins: 0
-  //   },
-  //   {
-  //   id: 'Two',
-  //   token: '🐻',
-  //   isTurn: false,
-  //   startGame: false,
-  //   moves: [],
-  //   wins: 0
-  //   }
-  // ];
-
   playersService: PlayersService = inject(PlayersService);
   players:  Player[] = [];
-  // player: Player = {};
 
   constructor() {
     this.players = this.playersService.getPlayers();
