@@ -35,30 +35,30 @@ export class AppComponent {
   //   wins: 0
   //   }
 
-  players: Player[] = [
-    {
-      id: 'One',
-      token: '🐝',
-      isTurn: true,
-      startGame: true,
-      moves: [],
-      wins: 0
-    },
-    {
-    id: 'Two',
-    token: '🐻',
-    isTurn: false,
-    startGame: false,
-    moves: [],
-    wins: 0
-    }
-  ];
+  // players: Player[] = [
+  //   {
+  //     id: 'One',
+  //     token: '🐝',
+  //     isTurn: true,
+  //     startGame: true,
+  //     moves: [],
+  //     wins: 0
+  //   },
+  //   {
+  //   id: 'Two',
+  //   token: '🐻',
+  //   isTurn: false,
+  //   startGame: false,
+  //   moves: [],
+  //   wins: 0
+  //   }
+  // ];
 
-  // playersService: PlayersService = inject(PlayersService);
-  // players:  Player[] = [];
+  playersService: PlayersService = inject(PlayersService);
+  players:  Player[] = [];
   // player: Player = {};
 
   constructor() {
-    // this.players = this.playersService.getPlayers();
+    this.players = this.playersService.getPlayers();
   }
 }
