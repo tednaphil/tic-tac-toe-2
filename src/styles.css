@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background: linear-gradient(#faf7de, #d0ed3b);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}

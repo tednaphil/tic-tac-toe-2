@@ -1,0 +1,41 @@
+.game-board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 45%;
+    width: 95%;
+}
+
+.grid-item {
+    background-color: transparent;
+    border: 3px solid;
+    padding: 40px;
+}
+
+.grid-item:hover {
+    cursor:pointer
+}
+
+#position0,
+#position1,
+#position2 {
+    border-top: transparent;
+
+}
+
+#position2,
+#position5,
+#position8 {
+    border-right: transparent;
+}
+
+#position6,
+#position7,
+#position8 {
+    border-bottom: transparent;
+}
+
+#position0,
+#position3,
+#position6 {
+    border-left: transparent
+}
